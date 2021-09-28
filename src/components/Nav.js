@@ -1,14 +1,5 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
-import {
-  FaBars,
-  FaTimes,
-  FaWhatsapp,
-  FaFacebookF,
-  FaYoutube,
-  FaInstagram,
-} from 'react-icons/fa'
-
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import logo from '../logo.svg'
 import '../App.css'
@@ -24,30 +15,7 @@ import {
   Drawer,
 } from './NavElements'
 
-export const Tsup = styled(FaWhatsapp)`
-  color: #ffe8d6;
-  &:hover {
-    color: #6b705c;
-  }
-`
-export const FB = styled(FaFacebookF)`
-  color: #ffe8d6;
-  &:hover {
-    color: #6b705c;
-  }
-`
-export const Tube = styled(FaYoutube)`
-  color: #ffe8d6;
-  &:hover {
-    color: #6b705c;
-  }
-`
-export const Gram = styled(FaInstagram)`
-  color: #ffe8d6;
-  &:hover {
-    color: #6b705c;
-  }
-`
+import { Tube, Tsup, Gram, FB } from './Footer'
 
 export default function NavTop() {
   // open and close drawer
@@ -80,6 +48,7 @@ export default function NavTop() {
                   style={{ height: '60px', width: '60px' }}
                 />
               </NavLogo>
+
               <MobileIcon onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
               </MobileIcon>
@@ -87,30 +56,20 @@ export default function NavTop() {
               <NavMenu onClick={handleClick} click={click}>
                 <NavItem>
                   <NavLinks
-                    href="/#services"
+                    href="/"
                     onClick={closeMobileMenu}
                     style={{ textDecoration: 'none' }}
                   >
-                    <h6>SERVICES</h6>
+                    <h6>ABOUT US</h6>
                   </NavLinks>
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    href="/#clients"
+                    href="/"
                     onClick={closeMobileMenu}
                     style={{ textDecoration: 'none' }}
                   >
-                    <h6>CLIENTS</h6>
-                  </NavLinks>
-                </NavItem>
-
-                <NavItem>
-                  <NavLinks
-                    href="/#about"
-                    onClick={closeMobileMenu}
-                    style={{ textDecoration: 'none' }}
-                  >
-                    <h6>COMPANY</h6>
+                    <h6>CONTACT US</h6>
                   </NavLinks>
                 </NavItem>
 

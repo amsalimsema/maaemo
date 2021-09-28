@@ -101,7 +101,6 @@ export const NavItemBtn = styled.li`
 
 export const NavLinks = styled.a`
   color: #ffe8d6;
-
   // color: #885c44;
   display: flex;
   align-items: center;
@@ -138,6 +137,7 @@ export const NavBtnLink = styled(Link)`
 export const Drawer = styled.div`
   margin-top: 3rem;
   text-align: start;
+
   color: #fff;
   line-height: normal;
   @media only screen and (min-width: 769px) {

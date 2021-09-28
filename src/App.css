@@ -11,10 +11,74 @@ body {
 .MobileNav {
   height: 83px;
   position: fixed;
-  background-color: transparent;
+  background-color: #000000;
   width: 100vw;
   z-index: 999;
 }
 .MobileNav.active {
   background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* services wave*/
+.services-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.services-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.services-wave .services-shape-fill {
+  fill: #6b705c;
+}
+/* footer wave with opacity */
+
+.footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.footer-wave .footer-shape-fill {
+  fill: #d4c7b0;
+}
+.custom-shape-divider-top-1630839795 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1630839795 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1630839795 .shape-fill {
+  fill: #6b705c;
 }
