@@ -74,6 +74,34 @@ export default function NavTop() {
                 </NavItem>
 
                 <Drawer>
+                  <NavItem>
+                    <NavLinks
+                      href="/"
+                      onClick={closeMobileMenu}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <h6>INVESTMENTS</h6>
+                    </NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks
+                      href="/"
+                      onClick={closeMobileMenu}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <h6>CONSULTING</h6>
+                    </NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks
+                      href="/"
+                      onClick={closeMobileMenu}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <h6>SUSTAINABILITY</h6>
+                    </NavLinks>
+                  </NavItem>
+
                   <div>
                     <a
                       href="https://wa.me/256760721071/?text=Hello Maaemo Enterprises"

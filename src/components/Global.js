@@ -20,7 +20,7 @@ export const GenLink = styled(Link)`
 export const Bg = styled.div`
   background-image: url(${landing});
   height: 50vh;
-  background-position: center center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.8s ease-in-out;

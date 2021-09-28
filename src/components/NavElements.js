@@ -135,12 +135,14 @@ export const NavBtnLink = styled(Link)`
 // drawer only for Maaemo
 
 export const Drawer = styled.div`
-  margin-top: 3rem;
   text-align: start;
-
   color: #fff;
   line-height: normal;
   @media only screen and (min-width: 769px) {
     display: none;
+  }
+
+  > div {
+    margin-top: 3rem;
   }
 `
