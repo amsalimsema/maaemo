@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 //import Button from 'react-bootstrap/Button'
-import landing from '../Images/now.jpg'
+import landing from '../Images/landingHero.jpg'
+import landingMob from '../Images/landingMob.jpg'
 
 // general link
 
@@ -25,8 +26,9 @@ export const Bg = styled.div`
   background-size: cover;
   transition: all 0.8s ease-in-out;
   //   filter: grayscale(1);
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1024px) {
     // filter: grayscale(1);
+    background-image: url(${landingMob});
   }
 `
 
@@ -50,8 +52,8 @@ export const LandingBtn = styled.button`
   color: #fff;
   font-size: 1.5rem;
   &:hover {
-    color: #885c44;
-    border-color: #885c44;
+    color: #c87f2a;
+    border-color: #c87f2a;
   }
 
   @media only screen and (max-width: 1024px) {

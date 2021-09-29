@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
-import logo from '../logo.svg'
+import logo from '../logo.png'
 import '../App.css'
 
 import {
@@ -38,7 +38,7 @@ export default function NavTop() {
   return (
     <>
       <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
-        <IconContext.Provider value={{ color: ' #ffe8d6' }}>
+        <IconContext.Provider value={{ color: '#C87F2A' }}>
           <Nav>
             <NavbarContainer>
               <NavLogo to="/" onClick={closeMobileMenu}>
@@ -47,6 +47,25 @@ export default function NavTop() {
                   alt="logo"
                   style={{ height: '60px', width: '60px' }}
                 />
+                <span
+                  style={{
+                    fontWeight: 'bold',
+                    letterSpacing: '1px',
+                    fontSize: '1.6rem',
+                  }}
+                >
+                  &nbsp;MAAEMO
+                </span>
+                <span
+                  style={{
+                    fontSize: '0.9rem',
+                    paddingTop: '0.3rem',
+                  }}
+                  className="logoNarration"
+                >
+                  &nbsp; &nbsp; &nbsp; &nbsp;Investing in Sustainable Solutions
+                  for Africa
+                </span>
               </NavLogo>
 
               <MobileIcon onClick={handleClick}>

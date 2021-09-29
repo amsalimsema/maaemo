@@ -1,7 +1,6 @@
 import React from 'react'
 // imh4ort { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container'
-
 import styled from 'styled-components'
 import { Bg, LandingBtn } from './Global'
 //imh4ort logo from '../logo.svg'
@@ -11,6 +10,7 @@ const LandingBg = styled(Bg)`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-position: cover;
 `
 const Wrap = styled(Container)`
   width: 60vw;
@@ -26,7 +26,7 @@ const Box = styled.div`
     cursor: pointer;
     height: 3px;
     &:hover {
-      background-color: #885c44;
+      background-color: #c87f2a;
     }
     @media only screen and (max-width: 1024px) {
       display: none;
@@ -40,7 +40,7 @@ const BoxDesk = styled.div`
     color: #fff;
     cursor: pointer;
     &:hover {
-      color: #885c44;
+      color: #c87f2a;
     }
     @media only screen and (min-width: 1336px) {
       > h3 {

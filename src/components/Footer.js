@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import logo from '../logo192.png'
 
 import {
   FaMapMarker,
@@ -52,13 +51,6 @@ export default function Footer() {
         <Wrap>
           <Row>
             <Col md={4} className="text-center">
-              <p>
-                <img
-                  src={logo}
-                  alt="logo"
-                  style={{ height: '60px', width: '60px' }}
-                />
-              </p>
               <p>Maaemo Enterprises</p>
               <p style={{ fontStyle: 'italic' }}>
                 Investing in sustainable solutions for Africa

@@ -7,7 +7,7 @@ import landing from '../Images/about.jpg'
 import strip from '../Images/heroStrip.jpg'
 
 const Box = styled.div`
-  background-color: #fff3eb;
+  background-color: #b7b6a3;
 `
 
 const Wrap = styled(Container)`
@@ -26,8 +26,11 @@ const WrapImg = styled.div`
 const WrapInfo = styled.div`
   text-align: end;
   padding-left: 2rem;
+  > h3 {
+    color: #000000;
+  }
   > p {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
   @media only screen and (max-width: 767px) {
     padding: 0rem 0.1rem 0 0.1rem;
@@ -38,7 +41,10 @@ const WrapInfo = styled.div`
 `
 const Strip = styled.div`
   > p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  > h3 {
+    color: #000000;
   }
   @media only screen and (max-width: 767px) {
     display: none;
@@ -62,7 +68,7 @@ export default function About() {
 
             <Col md={6}>
               <WrapInfo>
-                <h1 style={{ color: '#110447' }}>ABOUT US</h1>
+                <h1 style={{ color: '#182330' }}>ABOUT US</h1>
                 <h3>Working towards</h3>
                 <h3>A SELF RELIENT AFRICA</h3>
                 <p>
@@ -90,7 +96,7 @@ export default function About() {
             <p>
               <img src={strip} alt="about us" className="w-100 rounded" />
             </p>
-            <h1 style={{ color: '#110447' }}>ABOUT US</h1>
+            <h1 style={{ color: '#182330' }}>ABOUT US</h1>
             <h3>Working towards</h3>
             <h3>A SELF RELIENT AFRICA</h3>
             <p>

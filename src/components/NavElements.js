@@ -21,12 +21,22 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-top: 1.3rem;
   margin-left: -1rem;
   z-index: 50;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    text-decoration: none;s
+  }
+  >.logoNarration{
+    @media screen and (max-width: 768px) {
+      display:none;
+    }
+  }
+  
 `
 
 export const MobileIcon = styled.div`
@@ -45,9 +55,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  //   align-items: center;
   list-style: none;
-  //   text-align: center;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -59,8 +67,7 @@ export const NavMenu = styled.ul`
     right: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.3s ease;
-    background-color: #885c44;
-    // margin-top: 0px;
+    background-color: #182330;
     margin-top: 10px;
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -71,12 +78,11 @@ export const NavMenu = styled.ul`
     width: 50%;
     height: 100vh;
     position: absolute;
-    // margin-top: 0px;
     margin-top: 10px;
     right: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background-color: #885c44;
+    background-color: #182330;
   }
   @media screen and (min-width: 1024px) {
     margin-top: 3rem;
@@ -98,10 +104,9 @@ export const NavItemBtn = styled.li`
     // height: 120px;
   }
 `
-
+// nav links maaemo
 export const NavLinks = styled.a`
-  color: #ffe8d6;
-  // color: #885c44;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -109,12 +114,10 @@ export const NavLinks = styled.a`
   height: 100%;
   @media screen and (min-width: 1025px) {
     text-align: center;
-    // padding: 2rem;
     width: 100%;
     display: table;
     &:hover {
-      // color: #ffe8d6;
-      color: #885c44;
+      color: #c87f2a;
       text-decoration: none;
     }
   }

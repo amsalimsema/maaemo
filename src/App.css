@@ -11,12 +11,12 @@ body {
 .MobileNav {
   height: 83px;
   position: fixed;
-  background-color: #000000;
+  background-color: #182330;
   width: 100vw;
   z-index: 999;
 }
 .MobileNav.active {
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: #182330;
 }
 
 /* services wave*/
