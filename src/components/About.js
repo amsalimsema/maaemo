@@ -1,83 +1,119 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import landing from '../Images/about.jpg'
+import strip from '../Images/heroStrip.jpg'
+
+const Box = styled.div`
+  background-color: #fff3eb;
+`
 
 const Wrap = styled(Container)`
-  width: 93vw;
-  color: black;
-  padding: 4rem auto 0rem auto;
-  border-radius: 2rem;
-  background-color: #ffe8d6;
-  box-shadow: 5px 10px #3f4238;
-  cursor: pointer;
-  transition: 0.8s ease-in-out;
-  @media only screen and (max-width: 600px) {
-    box-shadow: 0px 10px #3f4238;
-  }
+  width: 80vw;
+  padding: 2rem 0;
 
-  &:hover {
-    transform: translateY(2px);
+  @media only screen and (max-width: 767px) {
+    width: 95vw;
   }
-
+`
+const WrapImg = styled.div`
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+`
+const WrapInfo = styled.div`
+  text-align: end;
+  padding-left: 2rem;
   > p {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
-
-  @media only screen and (min-width: 768px) {
-    width: 90vw;
+  @media only screen and (max-width: 767px) {
+    padding: 0rem 0.1rem 0 0.1rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+`
+const Strip = styled.div`
+  > p {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+  @media only screen and (min-width: 1025px) {
+    display: none;
   }
 `
 
 export default function About() {
   return (
     <>
-      <div style={{ backgroundColor: '#6B705C' }}>
-        <div style={{ padding: '5.5rem 0 5.5rem 0' }}>
-          <h4 className="text-center pb-3" style={{ color: '#ffe8d6' }}>
-            &#8212;&nbsp;COMPANY&nbsp;&#8212;
-          </h4>
-          <Wrap>
-            <div className="py-4">
-              <p>
-                <span className="font-weight-bold"> Maaemo Enterprises</span> is
-                an investment company registered in Kampala, Uganda that offers
-                consulting services to startups and established businesses
-                working towards innovative, environmental, and eco-friendly
-                solutions in the value supply chain focusing on developing
-                countries. We provide business solutions such as access to
-                investment funding, market expansion, technology and business
-                structures to help scale up operations of businesses to
-                profitability.
-              </p>
-              <p>
-                Maaemo Enterprises was founded by Amanda Olusanya, who moved to
-                Uganda from America as an investor, entrepreneur, and a business
-                consultant. Her story is non-traditional, much like herself.
-                She’s owned her own companies, invested in others but her true
-                talents came out while turning around a failing business into a
-                sale of a profitable company. She’s invested in herself as well,
-                both in business and spirituality which is a powerful
-                combination that helps her stay focused for her and her clients.
-              </p>
+      <Box>
+        <Wrap>
+          <Row>
+            <Col md={6}>
+              <WrapImg>
+                <img src={landing} alt="about us" className="w-100 rounded " />
+              </WrapImg>
+            </Col>
 
-              <p>
-                <span className="font-weight-bold"> Our Mission:</span>
-                <br /> To combine agriculture + manufacturing + sustainability
-                to create an opportunity for Africa to be self reliant.
-              </p>
-              <p>
-                <span className="font-weight-bold"> Our Vision:</span>
-                &nbsp;&nbsp;Endless.
-              </p>
-              <p>
-                <span className="font-weight-bold"> Our Values:</span>
-                <br />
-                Mother Earth, Prosperity, Efficiency
-              </p>
-            </div>
-          </Wrap>
-        </div>
-      </div>
+            <Col md={6}>
+              <WrapInfo>
+                <h1 style={{ color: '#110447' }}>ABOUT US</h1>
+                <h3>Working towards</h3>
+                <h3>A SELF RELIENT AFRICA</h3>
+                <p>
+                  Meet people using Android to change what's possible in daily
+                  life.Watch and read stories about creative, driven people
+                  discovering how to make their world more colorful and
+                  connected. With Android by their side.
+                </p>
+                <p>
+                  Meet people using Android to change what's possible in daily
+                  life.Watch and read stories about creative, driven people
+                  discovering how to make their world more colorful and
+                  connected. With Android by their side.
+                </p>
+                <p>
+                  Meet people using Android to change what's possible in daily
+                  life.Watch and read stories about creative, driven people
+                  discovering how to make their world more colorful and
+                  connected. With Android by their side.
+                </p>
+              </WrapInfo>
+            </Col>
+          </Row>
+          <Strip>
+            <p>
+              <img src={strip} alt="about us" className="w-100 rounded" />
+            </p>
+            <h1 style={{ color: '#110447' }}>ABOUT US</h1>
+            <h3>Working towards</h3>
+            <h3>A SELF RELIENT AFRICA</h3>
+            <p>
+              Meet people using Android to change what's possible in daily
+              life.Watch and read stories about creative, driven people
+              discovering how to make their world more colorful and connected.
+              With Android by their side.
+            </p>
+            <p>
+              Meet people using Android to change what's possible in daily
+              life.Watch and read stories about creative, driven people
+              discovering how to make their world more colorful and connected.
+              With Android by their side.
+            </p>
+            <p>
+              Meet people using Android to change what's possible in daily
+              life.Watch and read stories about creative, driven people
+              discovering how to make their world more colorful and connected.
+              With Android by their side.
+            </p>
+          </Strip>
+        </Wrap>
+      </Box>
     </>
   )
 }
