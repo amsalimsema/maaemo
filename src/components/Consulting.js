@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import { BsArrowRight } from 'react-icons/bs'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import strip from '../Images/heroStrip.jpg'
+import strip from '../Images/ConsultStrip.jpg'
 import { Bg } from './Global'
 import consulting from '../Images/pattern.svg'
 
