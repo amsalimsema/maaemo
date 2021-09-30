@@ -21,7 +21,7 @@ export const GenLink = styled(Link)`
 export const Bg = styled.div`
   background-image: url(${landing});
   height: 50vh;
-  background-position: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.8s ease-in-out;
@@ -51,16 +51,19 @@ export const LandingBtn = styled.button`
   border: 3px solid #fff;
   color: #fff;
   font-size: 1.5rem;
+  border-radius: 0.3rem;
+  transition: 0.8s ease-in-out;
   &:hover {
     color: #c87f2a;
     border-color: #c87f2a;
   }
 
   @media only screen and (max-width: 1024px) {
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     font-size: 1.3rem;
     padding: 0.5rem;
     margin: 1.1rem 0rem 0rem 0rem;
     width: 100%;
+    transition: 0.8s ease-in-out;
   }
 `

@@ -112,6 +112,7 @@ export const NavLinks = styled.a`
   text-decoration: none;
   padding: 0rem 1rem;
   height: 100%;
+  transition: 0.8s ease-in-out;
   @media screen and (min-width: 1025px) {
     text-align: center;
     width: 100%;

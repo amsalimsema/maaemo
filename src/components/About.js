@@ -70,7 +70,7 @@ export default function About() {
               <WrapInfo>
                 <h1 style={{ color: '#182330' }}>ABOUT US</h1>
                 <h3>Working towards</h3>
-                <h3>A SELF RELIENT AFRICA</h3>
+                <h3>A SELF RELIANT AFRICA</h3>
                 <p>
                   Meet people using Android to change what's possible in daily
                   life.Watch and read stories about creative, driven people

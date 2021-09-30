@@ -25,6 +25,7 @@ const Box = styled.div`
     background-color: #fff;
     cursor: pointer;
     height: 3px;
+    transition: 0.8s ease-in-out;
     &:hover {
       background-color: #c87f2a;
     }
@@ -39,6 +40,7 @@ const BoxDesk = styled.div`
     margin: 2rem 0;
     color: #fff;
     cursor: pointer;
+    transition: 0.8s ease-in-out;
     &:hover {
       color: #c87f2a;
     }
