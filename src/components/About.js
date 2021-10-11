@@ -7,7 +7,7 @@ import landing from '../Images/about.jpg'
 import strip from '../Images/heroStrip.jpg'
 
 const Box = styled.div`
-  background-color: #b7b6a3;
+  background-color: #e2d4c1;
 `
 
 const Wrap = styled(Container)`
@@ -27,7 +27,7 @@ const WrapInfo = styled.div`
   text-align: end;
   padding-left: 2rem;
   > h3 {
-    color: #000000;
+    color: #182330;
   }
   > p {
     font-size: 1.125rem;
@@ -44,7 +44,7 @@ const Strip = styled.div`
     font-size: 1.1rem;
   }
   > h3 {
-    color: #000000;
+    color: #182330;
   }
   @media only screen and (max-width: 767px) {
     display: none;
