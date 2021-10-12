@@ -3,6 +3,7 @@ import About from '../components/About'
 import Consulting from '../components/Consulting'
 import Investments from '../components/Investments'
 import Landing from '../components/Landing'
+import Contact from '../components/Contact'
 import Sustainability from '../components/Sustainability'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Consulting />
       <Sustainability />
       <About />
+      <Contact />
     </>
   )
 }
