@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from 'react-bootstrap/Container'
+import HoverVideoPlayer from 'react-hover-video-player'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 import { Bg } from './Global'
 import consulting from '../Images/pattern.svg'
 import play from '../Images/play.png'
+import now from '../Images/home.mp4'
 
 const Main = styled(Bg)`
   background-image: url(${consulting});
@@ -41,18 +43,7 @@ const Btn = styled.button`
     border: solid #c87f2a;
   }
 `
-const ImgBox = styled.div`
-  background-image: url(${play});
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no repeat;
-  height: 100%;
-  border-radius: 1rem;
-  @media only screen and (max-width: 600px) {
-    height: 60vh;
-    margin-bottom: 1.2rem;
-  }
-`
+
 export default function Investments() {
   return (
     <>
@@ -60,7 +51,33 @@ export default function Investments() {
         <Wrap>
           <Row>
             <Col md={6}>
-              <ImgBox />
+              <HoverVideoPlayer
+                style={{
+                  // Make the image expand to cover the video's dimensions
+                  width: '100%',
+                  height: '100%',
+                  paddingTop: '0.6rem',
+                }}
+                videoSrc={now}
+                pausedOverlay={
+                  <img
+                    src={play}
+                    alt="video"
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      borderRadius: '1rem',
+                    }}
+                  />
+                }
+                loadingOverlay={
+                  <div className="loading-overlay">
+                    <div className="loading-spinner" />
+                  </div>
+                }
+              />
             </Col>
             <Col md={6}>
               <Info>
