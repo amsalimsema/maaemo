@@ -1,6 +1,16 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import styled from 'styled-components'
+import { Link } from 'react-scroll'
+
 import { IconContext } from 'react-icons/lib'
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from 'react-icons/fa'
 import logo from '../logo.png'
 import '../App.css'
 
@@ -11,11 +21,33 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
   Drawer,
 } from './NavElements'
 
-import { Tube, Tsup, Gram, FB } from './Footer'
+const Tsup = styled(FaWhatsapp)`
+  color: #ffe8d6;
+  &:hover {
+    color: #6b705c;
+  }
+`
+const FB = styled(FaFacebookF)`
+  color: #ffe8d6;
+  &:hover {
+    color: #6b705c;
+  }
+`
+const Tube = styled(FaYoutube)`
+  color: #ffe8d6;
+  &:hover {
+    color: #6b705c;
+  }
+`
+const Gram = styled(FaInstagram)`
+  color: #ffe8d6;
+  &:hover {
+    color: #6b705c;
+  }
+`
 
 export default function NavTop() {
   // open and close drawer
@@ -74,51 +106,96 @@ export default function NavTop() {
 
               <NavMenu onClick={handleClick} click={click}>
                 <NavItem>
-                  <NavLinks
-                    href="/"
+                  <Link
                     onClick={closeMobileMenu}
-                    style={{ textDecoration: 'none' }}
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={150}
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      cursor: 'pointer',
+                    }}
                   >
-                    <h6>ABOUT US</h6>
-                  </NavLinks>
+                    <h6>ABOUT US&nbsp;&nbsp;</h6>
+                  </Link>
                 </NavItem>
                 <NavItem>
-                  <NavLinks
-                    href="/"
+                  <Link
                     onClick={closeMobileMenu}
-                    style={{ textDecoration: 'none' }}
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={150}
+                    style={{
+                      textDecoration: 'none',
+                      color: 'white',
+                      cursor: 'pointer',
+                    }}
                   >
                     <h6>CONTACT US</h6>
-                  </NavLinks>
+                  </Link>
                 </NavItem>
 
                 <Drawer>
                   <NavItem>
-                    <NavLinks
-                      href="/"
+                    <Link
                       onClick={closeMobileMenu}
-                      style={{ textDecoration: 'none' }}
+                      activeClass="active"
+                      to="investment"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={150}
+                      style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        cursor: 'pointer',
+                      }}
                     >
                       <h6>INVESTMENTS</h6>
-                    </NavLinks>
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLinks
-                      href="/"
+                    <Link
                       onClick={closeMobileMenu}
-                      style={{ textDecoration: 'none' }}
+                      activeClass="active"
+                      to="consulting"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={150}
+                      style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        cursor: 'pointer',
+                      }}
                     >
                       <h6>CONSULTING</h6>
-                    </NavLinks>
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLinks
-                      href="/"
+                    <Link
                       onClick={closeMobileMenu}
-                      style={{ textDecoration: 'none' }}
+                      activeClass="active"
+                      to="sustainability"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={150}
+                      style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        cursor: 'pointer',
+                      }}
                     >
                       <h6>SUSTAINABILITY</h6>
-                    </NavLinks>
+                    </Link>
                   </NavItem>
 
                   <div>

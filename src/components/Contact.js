@@ -130,7 +130,20 @@ export default function Contact() {
             </Col>
             <Col md={6}>
               <FormWrap>
-                <form style={{ padding: '2rem 1rem 2.5rem 1rem' }}>
+                <form
+                  style={{ padding: '2rem 1rem 2.5rem 1rem' }}
+                  name="maaemo"
+                  target="_self"
+                  action=""
+                  method="POST"
+                  id="webForm"
+                >
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://www.anjdatamanagement.com/"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
                   <Form
                     type="text"
                     name="name"

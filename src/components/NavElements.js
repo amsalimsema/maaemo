@@ -104,7 +104,7 @@ export const NavItemBtn = styled.li`
     // height: 120px;
   }
 `
-// nav links maaemo
+// nav links maaemo -ignore
 export const NavLinks = styled.a`
   color: #fff;
   display: flex;
