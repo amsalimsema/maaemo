@@ -113,7 +113,7 @@ export default function NavTop() {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={150}
+                    duration={400}
                     style={{
                       textDecoration: 'none',
                       color: 'white',
@@ -131,7 +131,7 @@ export default function NavTop() {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={150}
+                    duration={400}
                     style={{
                       textDecoration: 'none',
                       color: 'white',
@@ -151,7 +151,7 @@ export default function NavTop() {
                       spy={true}
                       smooth={true}
                       offset={-70}
-                      duration={150}
+                      duration={400}
                       style={{
                         textDecoration: 'none',
                         color: 'white',
@@ -169,7 +169,7 @@ export default function NavTop() {
                       spy={true}
                       smooth={true}
                       offset={-70}
-                      duration={150}
+                      duration={400}
                       style={{
                         textDecoration: 'none',
                         color: 'white',
@@ -187,7 +187,7 @@ export default function NavTop() {
                       spy={true}
                       smooth={true}
                       offset={-70}
-                      duration={150}
+                      duration={400}
                       style={{
                         textDecoration: 'none',
                         color: 'white',
